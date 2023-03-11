@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Loan </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <link rel ="stylesheet" href = "loan-page.css"/>  
+    </head>
+    <body class="bg-light" id="bgColorMode">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#" style="color:black;">SK Bank</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="d-flex flex-row justify-content-center" style="margin-left:auto;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" id="darkMode" class="bi bi-moon-fill dark mode" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </nav> 
+        <h1 class="main-heading" id="mainHeadingColor">Home Loan EMI Calculator</h1>
+          <div class="d-flex justify-content-center">
+            <div class="white-card shadow-lg" >
+
+              <label for="loanAmountElement" class="label-text mt-5">Loan Amount</label><br/>
+              <input type="text" id="loanAmountElement" class="input-box" placeholder="Please enter loan amount"/>
+              <p id="loanAmountErrorMsg" class="error-message-color"></p>
+
+              <label for="interestRate" class="label-text mt-5">Rate of Interest</label><br/>
+              <input type="text" id="interestRate" class="input-box" placeholder="Please enter loan interest"/>
+              <p id="loanInterestErrorMsg" class="error-message-color"></p>
+
+              <label for="years" class="label-text mt-5">Loan Tenure</label><br/>
+              <input type="text" id="years" class="input-box" placeholder="Please enter number of years"/>
+              <p id="loanYearsErrorMsg" class="error-message-color"></p>
+
+              <button type="submit" id="submitBtn" class="btn btn-success button shadow">Check Loan Amount</button>
+
+              <div id="allResultValues" class="mt-5">
+                <hr class="hr-line" id="hrLine"/>
+                <div>
+                  <p id="totalAmount" class="result" ></p>
+                  <p id="totalYears" class="result" ></p>
+                  <p id="totalMonths" class="result" ></p>
+                  <p id="totalInterest" class="result" ></p>
+                  <p id="result" class="result"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://kongala-srikanth.github.io/portfolio/"><button class="btn btn-warning m-5">Go Back</button></a>
+          <script src="script.js"></script>
+    </body>
+</html>
